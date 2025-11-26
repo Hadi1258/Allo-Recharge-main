@@ -544,22 +544,3 @@ button{font:inherit}
   .hero-actions{ width:100%; }
   .hero-actions .btn{ flex:1 1 auto; justify-content:center; }
 }
-
-/* Mobile quick action bar */
-.mobile-cta-bar{
-  position:fixed;
-  left:0; right:0; bottom:0;
-  display:none;
-  gap:8px;
-  padding:10px 12px env(safe-area-inset-bottom, 8px);
-  background:color-mix(in oklab, var(--surface) 96%, transparent);
-  border-top:1px solid var(--line);
-  box-shadow:0 -12px 32px rgba(0,0,0,0.2);
-  z-index:80;
-}
-.mobile-cta-bar .btn{ flex:1 1 auto; }
-.mobile-cta-bar .btn-ghost{ background:var(--surface-2); border-color:var(--line); color:var(--text); }
-@media (max-width: 720px){
-  .mobile-cta-bar{ display:flex; }
-  .floating-cta{ display:none; }
-}
