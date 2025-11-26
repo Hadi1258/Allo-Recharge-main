@@ -4,8 +4,8 @@
     telecom:        ['#3ac0f0','#6ae38b'],
     subscriptions:  ['#6ae38b','#3ac0f0'],
     'social-media': ['#3ac0f0','#6ae38b'],
-    'steam-keys':   ['#6ae38b','#3ac0f0'],
-    'steam-games':  ['#3ac0f0','#6ae38b'],
+    'steam-keys':   ['#6ae38b','#3ac0f0'], // legacy, kept in map though page removed
+    'steam-games':  ['#3ac0f0','#6ae38b'], // legacy, kept in map though page removed
     services:       ['#6ae38b','#3ac0f0'],
   };
   const slug = document.body?.dataset?.cat || '';
