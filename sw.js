@@ -1,4 +1,4 @@
-const VERSION = 'v2';
+const VERSION = 'v3';
 const CACHE = `allo-${VERSION}`;
 const BASE = self.registration.scope; // e.g. https://USERNAME.github.io/REPO/
 
@@ -6,7 +6,7 @@ const ASSETS = [
   'index.html',
   'style.css',
   'app.js',
-  'assets/logo.svg'
+  'assets/logo-ar.svg'
 ].map(p => new URL(p, BASE).toString());
 
 self.addEventListener('install', e => {
