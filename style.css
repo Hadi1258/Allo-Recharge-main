@@ -256,7 +256,7 @@ button{font:inherit}
     radial-gradient(720px 420px at 5% 10%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 60%),
     color-mix(in oklab, var(--bg-soft) 88%, transparent);
 }
-.hero-grid{
+.hero-grid{ position:relative;
   display:grid;
   grid-template-columns:repeat(2, minmax(0,1fr));
   gap:28px;
@@ -320,15 +320,8 @@ button{font:inherit}
   padding:20px;
   box-shadow:var(--shadow);
 }
-.hero-card-inline{
-  margin-top:-20px;
-  margin-left:24px;
-  max-width:520px;
-  float:right;
-}
-.hero-card-inline::after{
-  content:\"\"; display:block; clear:both;
-}
+.hero-card-inline{ position:absolute; right:-24px; top:-48px; max-width:520px; }
+
 .hero-card .label{
   display:inline-flex;
   align-items:center;
@@ -598,12 +591,12 @@ button{font:inherit}
   }
   .nav-links{ display:none; }
   .hero{ padding:76px 0 38px; }
-  .hero-grid{ grid-template-columns:1fr; }
+  .hero-grid{ position:relative; grid-template-columns:1fr; }
   .stat-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
   .hero-actions .btn{ width:100%; justify-content:center; }
   .pill-grid{ grid-template-columns:1fr; }
   .card .content p{ font-size:14px; line-height:1.5; }
-  .hero-card-inline{ margin:20px 0 0; float:none; max-width:none; }
+  .hero-card-inline{ position:static; margin:20px 0 0; max-width:none; }
 }
 @media (max-width: 599.98px){
   body{ font-size:15px; }
@@ -621,3 +614,4 @@ button{font:inherit}
   .hero-actions .btn{ flex:1 1 auto; justify-content:center; }
   .hero-card{ display:none; }
 }
+
