@@ -256,11 +256,12 @@ button{font:inherit}
     radial-gradient(720px 420px at 5% 10%, color-mix(in oklab, var(--accent) 22%, transparent), transparent 60%),
     color-mix(in oklab, var(--bg-soft) 88%, transparent);
 }
-.hero-grid{ position:relative;
+.hero-grid{
+  position:relative;
   display:grid;
   grid-template-columns:repeat(2, minmax(0,1fr));
   gap:28px;
-  align-items:center;
+  align-items:flex-start;
 }
 .hero-eyebrow{
   display:inline-flex;
@@ -313,6 +314,7 @@ button{font:inherit}
   border-radius:50%;
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
 }
+.hero-list-secondary{ margin-top:16px; }
 .hero-card{
   background:linear-gradient(180deg, color-mix(in oklab, var(--surface) 94%, transparent), color-mix(in oklab, var(--surface-2) 98%, transparent));
   border:1px solid var(--line);
@@ -320,7 +322,13 @@ button{font:inherit}
   padding:20px;
   box-shadow:var(--shadow);
 }
-.hero-card-inline{ position:absolute; right:-24px; top:-48px; max-width:520px; }
+.hero-card-inline{
+  position:static;
+  max-width:520px;
+  align-self:flex-start;
+  justify-self:end;
+  margin-top:0;
+}
 
 .hero-card .label{
   display:inline-flex;
@@ -591,12 +599,12 @@ button{font:inherit}
   }
   .nav-links{ display:none; }
   .hero{ padding:76px 0 38px; }
-  .hero-grid{ position:relative; grid-template-columns:1fr; }
+  .hero-grid{ position:relative; grid-template-columns:1fr; align-items:flex-start; }
   .stat-grid{ grid-template-columns:repeat(2,minmax(0,1fr)); }
   .hero-actions .btn{ width:100%; justify-content:center; }
   .pill-grid{ grid-template-columns:1fr; }
   .card .content p{ font-size:14px; line-height:1.5; }
-  .hero-card-inline{ position:static; margin:20px 0 0; max-width:none; }
+  .hero-card-inline{ position:static; margin:20px 0 0; max-width:none; justify-self:stretch; }
 }
 @media (max-width: 599.98px){
   body{ font-size:15px; }
