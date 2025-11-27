@@ -605,4 +605,5 @@ button{font:inherit}
   .theme-toggle{ width:34px; height:34px; }
   .hero-actions{ width:100%; }
   .hero-actions .btn{ flex:1 1 auto; justify-content:center; }
+  .hero-card{ display:none; }
 }
