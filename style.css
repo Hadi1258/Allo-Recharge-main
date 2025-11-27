@@ -454,7 +454,7 @@ button{font:inherit}
   display:grid; place-items:center;
   border-radius:10px;
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#04121b;
+  color:#ffffff;
   font-weight:900;
 }
 
