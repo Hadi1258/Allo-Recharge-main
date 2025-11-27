@@ -320,6 +320,15 @@ button{font:inherit}
   padding:20px;
   box-shadow:var(--shadow);
 }
+.hero-card-inline{
+  margin-top:-20px;
+  margin-left:24px;
+  max-width:520px;
+  float:right;
+}
+.hero-card-inline::after{
+  content:\"\"; display:block; clear:both;
+}
 .hero-card .label{
   display:inline-flex;
   align-items:center;
@@ -594,6 +603,7 @@ button{font:inherit}
   .hero-actions .btn{ width:100%; justify-content:center; }
   .pill-grid{ grid-template-columns:1fr; }
   .card .content p{ font-size:14px; line-height:1.5; }
+  .hero-card-inline{ margin:20px 0 0; float:none; max-width:none; }
 }
 @media (max-width: 599.98px){
   body{ font-size:15px; }
