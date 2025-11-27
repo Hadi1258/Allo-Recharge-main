@@ -14,7 +14,8 @@ const qsa = (s, r=document) => Array.from(r.querySelectorAll(s));
     localStorage.setItem('theme', mode);
     if (btn){
       btn.setAttribute('data-mode', mode);
-      btn.textContent = mode === 'light' ? 'Dark mode' : 'Light mode';
+      btn.textContent = '';
+      btn.setAttribute('aria-label', mode === 'light' ? 'Switch to dark mode' : 'Switch to light mode');
     }
   };
 
