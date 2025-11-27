@@ -215,7 +215,7 @@ button{font:inherit}
   font-weight:800;
   border:1px solid transparent;
   background:linear-gradient(135deg, var(--accent), var(--accent-2));
-  color:#04121b;
+  color:#ffffff;
   box-shadow:0 14px 36px color-mix(in oklab, var(--accent-2) 18%, transparent);
   transition:transform .15s ease, box-shadow .15s ease, filter .15s ease;
 }
