@@ -27,7 +27,10 @@
   margin-bottom:0;
 }
 
+.cat-hero + .section{
+  padding-top:30px;
+}
+
 @media (max-width: 991.98px){
-  .cat-hero{ padding:44px 0 32px; }
   .category-grid.card-grid{ grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); }
 }
